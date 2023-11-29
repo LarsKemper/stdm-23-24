@@ -50,3 +50,10 @@
   - Quelle
 
 ## Zeitplan
+
+### 29.11.2023 (2)
+
+- Feature-Brainstorming
+- Lars, Lukas: Use Case
+- Mathis: ER-Diagramm
+- Anastasia: Aktivitätsdiagramm

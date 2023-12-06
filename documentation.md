@@ -1,5 +1,12 @@
 # Documentation
 
+## Conventions
+
+### Entities
+
+Primary key names: "id"
+Forgein key names: "entity_id"
+
 ## Definition
 
 ### Features (Brainstrom)

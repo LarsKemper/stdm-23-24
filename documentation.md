@@ -4,8 +4,8 @@
 
 ### Entities
 
-Primary key names: "id"
-Forgein key names: "entity_id"
+- Primary key names: "id"
+- Forgein key names: "entity_id"
 
 ## Definition
 

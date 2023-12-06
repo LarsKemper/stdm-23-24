@@ -52,7 +52,7 @@
 - Finanzen
   - Typ: Einnahme oder Ausgabe
   - Name
-  - Label
+  - Label (Mitgliedsbeitrag, Bälle, etc.)
   - Wert
   - Quelle
 

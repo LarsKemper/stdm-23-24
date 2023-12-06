@@ -60,11 +60,21 @@
   - Wert
   - Quelle
 
-## Zeitplan
+## Timetable
+
+### 22.11.2023 (1)
+
+- Brainstorming
 
 ### 29.11.2023 (2)
 
 - Feature-Brainstorming
+- Lars, Lukas: Use Case
+- Mathis: ER-Diagramm
+- Anastasia: Aktivitätsdiagramm
+
+### 06.12.2023 (3)
+
 - Lars, Lukas: Use Case
 - Mathis: ER-Diagramm
 - Anastasia: Aktivitätsdiagramm

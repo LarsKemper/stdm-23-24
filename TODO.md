@@ -1,17 +1,17 @@
 # TODO
 
-## Use Case Diagramm (Lars & Lukas)
+### [ ] Use Case Diagramm (Lars & Lukas)
 
-## Use Case Schablonen (Lars & Lukas)
+### [ ] Use Case Schablonen (Lars & Lukas)
 
-## Klassendiagramm (Lars)
+### [ ] Klassendiagramm (Lars)
 
-## Zustandsdiagramm (Lukas)
+### [ ] Zustandsdiagramm (Lukas)
 
-## Kommunikationsdiagramm (Anastasia)
+### [ ] Kommunikationsdiagramm (Anastasia)
 
-## Aktivitätsdiagramm (Anatasia)
+### [x] Aktivitätsdiagramm (Anatasia)
 
-## ER-Diagramm (Mathis)
+### [ ] ER-Diagramm (Mathis)
 
-## Relationsmodell (Mathis)
+### [ ] Relationsmodell (Mathis)

@@ -2,6 +2,10 @@
 
 ## Conventions
 
+### File naming
+
+- Kebab case: "test-test.example"
+
 ### Entities
 
 - Primary key names: "id"

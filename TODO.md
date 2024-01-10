@@ -12,6 +12,6 @@
 
 ### [x] Aktivitätsdiagramm (Anatasia)
 
-### [ ] ER-Diagramm (Mathis)
+### [x] ER-Diagramm (Mathis)
 
-### [ ] Relationsmodell (Mathis)
+### [x] Relationsmodell (Mathis)

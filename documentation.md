@@ -78,3 +78,8 @@
 - Lars, Lukas: Use Case
 - Mathis: ER-Diagramm
 - Anastasia: Aktivitätsdiagramm
+
+### 10.01.2024 (4)
+
+- Mathis Relationsmodell
+- Lukas: Zustandsdiagramm

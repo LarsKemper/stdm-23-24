@@ -85,6 +85,6 @@
 - Lukas: Zustandsdiagramm
 
 ### 17.01.2024 (5)
-- Lars: Klassendiagramm
+- Lars: Klassendiagramm & Use Case Schablonen
 - Anastasia: Kommunikationsdiagramm
 - Lukas: Zustandsdiagramm

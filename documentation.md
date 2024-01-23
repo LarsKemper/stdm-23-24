@@ -83,3 +83,8 @@
 
 - Mathis Relationsmodell
 - Lukas: Zustandsdiagramm
+
+### 17.01.2024 (5)
+- Lars: Klassendiagramm
+- Anastasia: Kommunikationsdiagramm
+- Lukas: Zustandsdiagramm

@@ -1,4 +1,4 @@
-INSERT INTO member (ID, lastname, prename, birthdate, gender, license, is_activ, adress, has_insurance)
+INSERT INTO member (id, lastname, prename, birthday, gender, license, is_active, address, has_insurance)
 VALUES
 (1, 'Mustermann', 'Max', '1990-01-01', 'M', TRUE, TRUE, 'Musterstraße 1, Musterstadt', TRUE),
 (2, 'Musterfrau', 'Maria', '1995-03-15', 'W', FALSE, TRUE, 'Beispielweg 2, Beispielstadt', FALSE),
@@ -7,23 +7,23 @@ VALUES
 (2000, 'Gausse', 'Gundula', '1978-12-30', 'W', FALSE, FALSE, 'Stauffenbergstraße 1, Afrika', FALSE),
 (77, 'Eber', 'Hans', '1985-07-07', 'M', TRUE, TRUE, 'Zur Alten Wanne 10, Aua', TRUE);
 
-INSERT INTO practiceplan (weekday, clocktime, ID_member)
+INSERT INTO practice_plan (weekday, datetime, id_member)
 VALUES
 ('Monday' , '15:30:00', 1),
 ('Monday','16:30:00', 2),
 ('Tuesday','20:30:00', 689),
 ('Wednesday','17:30:00', 77),
-('Wednesday','19:00:00', 2000)
+('Wednesday','19:00:00', 2000),
 ('Thursday','20:00:00', 16);
 
-INSERT INTO tournamenttype (ID, bowsort, gender, agegroup)
+INSERT INTO tournament_type (id, bow_sort, gender, age_group)
 VALUES
 (1, 'compound', 'M', 'senior'),
 (2, 'longbow', 'W', 'junior'),
 (3, 'recurve', 'W', 'open'),
 (4, 'compound', 'D', 'senior');
 
-INSERT INTO tournament (ID, title, adress, maxparticipants, date)
+INSERT INTO tournament (id, title, address, max_attendees, date)
 VALUES
 (1, 'Senior World Championship 2024 Compound Bow Male', 'Gut Insel 41, Muenster', 100, '2024-06-06'),
 (2, 'Junior World Championship 2024 longbow Female', 'Gut Insel 41, Muenster', 100, '2024-06-07'),

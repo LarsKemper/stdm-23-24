@@ -88,3 +88,11 @@
 - Lars: Klassendiagramm & Use Case Schablonen
 - Anastasia: Kommunikationsdiagramm
 - Lukas: Zustandsdiagramm
+
+### 24.01.2024 (6)
+
+- Übergabe Modellierung
+
+### 31.01.2024 (7)
+
+- Datenbank

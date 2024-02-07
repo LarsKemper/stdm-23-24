@@ -21,4 +21,12 @@ VALUES
 (1, 'compound', 'M', 'senior'),
 (2, 'longbow', 'W', 'junior'),
 (3, 'recurve', 'W', 'open'),
-(4, 'compound', 'OPEN', 'senior');
+(4, 'compound', 'D', 'senior');
+
+INSERT INTO tournament (ID, title, adress, maxparticipants, date)
+VALUES
+(1, 'Senior World Championship 2024 Compound Bow Male', 'Gut Insel 41, Muenster', 100, '2024-06-06'),
+(2, 'Junior World Championship 2024 longbow Female', 'Gut Insel 41, Muenster', 100, '2024-06-07'),
+(3, 'Open Masters 2025 Recurve Bow Female', 'Brinkstrasse 13, Osnabrueck', 64, '2025-04-15'),
+(4, 'Double Masters 2025 Compound Bow', 'Brinkstrasse 13, Osnabrueck', 32, '2025-04-16');
+

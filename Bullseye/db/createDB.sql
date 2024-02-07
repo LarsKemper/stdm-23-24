@@ -2,47 +2,47 @@
 CREATE DATABASE IF NOT EXISTS ArcheryClub;
 
 -- Erstelle die Tabelle "Mitglied"
-CREATE TABLE IF NOT EXISTS Mitglied (
+CREATE TABLE IF NOT EXISTS member (
     ID INT AUTO_INCREMENT PRIMARY KEY,
-    Nachname VARCHAR(255) NOT NULL,
-    Vorname VARCHAR(255) NOT NULL,
-    Geburtsdatum DATE,
-    Geschlecht VARCHAR(10),
-    Trainerschein BOOLEAN,
-    ist_aktiv BOOLEAN,
-    Anschrift TEXT,
-    hat_Haftpflicht BOOLEAN
+    lastname VARCHAR(255) NOT NULL,
+    prename VARCHAR(255) NOT NULL,
+    bithdate DATE,
+    gender VARCHAR(10),
+    licence BOOLEAN,
+    is_activ BOOLEAN,
+    adress TEXT,
+    has_insurance BOOLEAN
 );
 
 -- Erstelle die Tabelle "Trainingsplan"
-CREATE TABLE IF NOT EXISTS Trainingsplan (
+CREATE TABLE IF NOT EXISTS practiceplan (
     ID INT AUTO_INCREMENT PRIMARY KEY,
-    Wochentag ENUM('Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag') NOT NULL,
-    Uhrzeit TIME,
-    FOREIGN KEY (ID_Mitglied) REFERENCES Mitlgied(ID_Mitglied)
+    weekday ENUM('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday') NOT NULL,
+    clocktime TIME,
+    FOREIGN KEY (ID_member) REFERENCES member(ID)
 );
 
 -- Erstelle die Tabelle "Turnierklasse"
-CREATE TABLE IF NOT EXISTS Turnierklasse (
+CREATE TABLE IF NOT EXISTS tournamenttype (
     ID INT AUTO_INCREMENT PRIMARY KEY,
-    bogenart VARCHAR(255),
-    Geschlecht VARCHAR(10),
-    altersgruppe VARCHAR(10)
+    bowsort VARCHAR(255),
+    gender VARCHAR(10),
+    agegroup VARCHAR(10)
 );
 
 -- Erstelle die Tabelle "Turnier"
-CREATE TABLE IF NOT EXISTS Turnier (
+CREATE TABLE IF NOT EXISTS tournament (
     ID INT AUTO_INCREMENT PRIMARY KEY,
-    bezeichnung VARCHAR(255),
-    adresse VARCHAR(255),
-    maxTeilnehmer INT,
-    datum DATE
+    title VARCHAR(255),
+    adress VARCHAR(255),
+    maxparticipants INT,
+    date DATE
 );
 
 -- Erstelle die Tabelle "Turnierteilnehmer"
-CREATE TABLE IF NOT EXISTS Turnierteilnehmer (
-    FOREIGN KEY (ID_turnierklasse) REFERENCES Turnierklasse(ID),
-    FOREIGN KEY (ID_Mitglied) REFERENCES Mitglied(ID),
-    FOREIGN KEY (ID_Turnier) REFERENCES Turnier(ID),
-    platzierung INT
+CREATE TABLE IF NOT EXISTS tournamentParticipants (
+    FOREIGN KEY (ID_tournamenttype) REFERENCES tournamenttype(ID),
+    FOREIGN KEY (ID_member) REFERENCES member(ID),
+    FOREIGN KEY (ID_tournament) REFERENCES tournament(ID),
+    place INT
 );

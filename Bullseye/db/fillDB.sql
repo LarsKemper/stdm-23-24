@@ -1,5 +1,24 @@
-INSERT INTO Mitglied (Nachname, Vorname, Geburtsdatum, Geschlecht, Trainerschein, ist_aktiv, Anschrift, hat_Haftpflicht)
+INSERT INTO member (ID, lastname, prename, birthdate, gender, license, is_activ, adress, has_insurance)
 VALUES
-('Mustermann', 'Max', '1990-01-01', 'M', TRUE, TRUE, 'Musterstraße 1, Musterstadt', TRUE),
-('Musterfrau', 'Maria', '1995-03-15', 'W', FALSE, TRUE, 'Beispielweg 2, Beispielstadt', FALSE),
-('Grab', 'Manuel', '2003-05-04', 'M', FALSE, TRUE, 'Hundeweg 69, Dummmhausen', FALSE);
+(1, 'Mustermann', 'Max', '1990-01-01', 'M', TRUE, TRUE, 'Musterstraße 1, Musterstadt', TRUE),
+(2, 'Musterfrau', 'Maria', '1995-03-15', 'W', FALSE, TRUE, 'Beispielweg 2, Beispielstadt', FALSE),
+(689, 'Grab', 'Manuel', '2003-05-04', 'M', FALSE, TRUE, 'Hundeweg 69, Dummmhausen', FALSE),
+(16, 'Peterson', 'Peter', '1999-04-17', 'M', TRUE, TRUE, 'Poststraße 100, Berlin', TRUE), 
+(2000, 'Gausse', 'Gundula', '1978-12-30', 'W', FALSE, FALSE, 'Stauffenbergstraße 1, Afrika', FALSE),
+(77, 'Eber', 'Hans', '1985-07-07', 'M', TRUE, TRUE, 'Zur Alten Wanne 10, Aua', TRUE);
+
+INSERT INTO practiceplan (weekday, clocktime, ID_member)
+VALUES
+('Monday' , '15:30:00', 1),
+('Monday','16:30:00', 2),
+('Tuesday','20:30:00', 689),
+('Wednesday','17:30:00', 77),
+('Wednesday','19:00:00', 2000)
+('Thursday','20:00:00', 16);
+
+INSERT INTO tournamenttype (ID, bowsort, gender, agegroup)
+VALUES
+(1, 'compound', 'M', 'senior'),
+(2, 'longbow', 'W', 'junior'),
+(3, 'recurve', 'W', 'open'),
+(4, 'compound', 'OPEN', 'senior');

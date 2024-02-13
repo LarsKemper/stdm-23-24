@@ -1,11 +1,11 @@
-INSERT INTO member (id, lastname, prename, birthday, gender, license, is_active, address, has_insurance)
+INSERT INTO member (id, lastname, firstname, birthday, gender, license, is_active, address, has_insurance)
 VALUES
-    (1, 'Mustermann', 'Max', '1990-01-01', 'M', TRUE, TRUE, 'Musterstraße 1, Musterstadt', TRUE),
-    (2, 'Musterfrau', 'Maria', '1995-03-15', 'W', FALSE, TRUE, 'Beispielweg 2, Beispielstadt', FALSE),
-    (689, 'Grab', 'Manuel', '2003-05-04', 'M', FALSE, TRUE, 'Hundeweg 69, Dummmhausen', FALSE),
-    (16, 'Peterson', 'Peter', '1999-04-17', 'M', TRUE, TRUE, 'Poststraße 100, Berlin', TRUE),
-    (2000, 'Gausse', 'Gundula', '1978-12-30', 'W', FALSE, FALSE, 'Stauffenbergstraße 1, Afrika', FALSE),
-    (77, 'Eber', 'Hans', '1985-07-07', 'M', TRUE, TRUE, 'Zur Alten Wanne 10, Aua', TRUE);
+    (1, 'Mustermann', 'Max', '1990-01-01', 'MALE', TRUE, TRUE, 'Musterstraße 1, Musterstadt', TRUE),
+    (2, 'Musterfrau', 'Maria', '1995-03-15', 'FEMALE', FALSE, TRUE, 'Beispielweg 2, Beispielstadt', FALSE),
+    (689, 'Grab', 'Manuel', '2003-05-04', 'MALE', FALSE, TRUE, 'Hundeweg 69, Dummmhausen', FALSE),
+    (16, 'Peterson', 'Peter', '1999-04-17', 'MALE', TRUE, TRUE, 'Poststraße 100, Berlin', TRUE),
+    (2000, 'Gausse', 'Gundula', '1978-12-30', 'FEMALE', FALSE, FALSE, 'Stauffenbergstraße 1, Afrika', FALSE),
+    (77, 'Eber', 'Hans', '1985-07-07', 'MALE', TRUE, TRUE, 'Zur Alten Wanne 10, Aua', TRUE);
 
 INSERT INTO practice_plan (weekday, datetime, id_member)
 VALUES
@@ -18,10 +18,10 @@ VALUES
 
 INSERT INTO tournament_type (id, bow_sort, gender, age_group)
 VALUES
-    (1, 'compound', 'M', 'senior'),
-    (2, 'longbow', 'W', 'junior'),
-    (3, 'recurve', 'W', 'open'),
-    (4, 'compound', 'D', 'senior');
+    (1, 'COMPOUND', 'MALE', 'SENIOR'),
+    (2, 'LONGBOW', 'FEMALE', 'JUNIOR'),
+    (3, 'RECURVE', 'FEMALE', 'OPEN'),
+    (4, 'COMPOUND', 'DIVERS', 'SENIOR');
 
 INSERT INTO tournament (id, title, address, max_attendees, date)
 VALUES

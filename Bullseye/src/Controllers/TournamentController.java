@@ -1,6 +1,6 @@
 package Controllers;
 
-import Models.Tournament;
+import Entities.Tournament;
 
 public class TournamentController {
 }

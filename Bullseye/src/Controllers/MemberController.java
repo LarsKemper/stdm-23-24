@@ -1,6 +1,6 @@
 package Controllers;
 
-import Models.Member;
+import Entities.Abstracts.AbstractMember;
 
 public class MemberController {
 }

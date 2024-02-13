@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS member (
     birthday DATE,
     gender varchar(6) CHECK ( gender IN ('MALE', 'FEMALE', 'DIVERS') ),
     address TEXT,
-    licence BOOLEAN,
+    license BOOLEAN,
     is_active BOOLEAN,
     has_insurance BOOLEAN
 );
@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS tournament_type (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     bow_sort varchar(8) CHECK ( bow_sort IN ('COMPOUND', 'LONGBOW', 'RECURVE') ),
     gender varchar(6) CHECK ( gender IN ('MALE', 'FEMALE', 'DIVERS') ),
-    age_group varchar(6) CHECK ( age_group IN ('JUNIOR', 'SENIOR') )
+    age_group varchar(6) CHECK ( age_group IN ('JUNIOR', 'SENIOR', 'OPEN') )
 );
 
 CREATE TABLE IF NOT EXISTS tournament (

@@ -1,7 +1,7 @@
 package Utils;
 
 public enum BowTyp {
-    COMPUND,
+    COMPOUND,
     LONGBOW,
     RECURVE,  
 }

@@ -1,48 +1,45 @@
--- Erstelle die Datenbank "Bullseye"
-CREATE DATABASE IF NOT EXISTS Bullseye;
-
--- Erstelle die Tabelle "Mitglied"
 CREATE TABLE IF NOT EXISTS member (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    lastname VARCHAR(255) NOT NULL,
-    prename VARCHAR(255) NOT NULL,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    lastname TEXT NOT NULL,
+    firstname TEXT NOT NULL,
     birthday DATE,
-    gender VARCHAR(10),
+    gender varchar(6) CHECK ( gender IN ('MALE', 'FEMALE', 'DIVERS') ),
+    address TEXT,
     licence BOOLEAN,
     is_active BOOLEAN,
-    address TEXT,
     has_insurance BOOLEAN
 );
 
--- Erstelle die Tabelle "Trainingsplan"
 CREATE TABLE IF NOT EXISTS practice_plan (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    weekday ENUM('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday') NOT NULL,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id_member INTEGER,
+    weekday TEXT NOT NULL,
     datetime DATETIME,
     FOREIGN KEY (id_member) REFERENCES member(id)
 );
 
--- Erstelle die Tabelle "Turnierklasse"
 CREATE TABLE IF NOT EXISTS tournament_type (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    bow_sort VARCHAR(255),
-    gender VARCHAR(10),
-    age_group VARCHAR(10)
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    bow_sort varchar(8) CHECK ( bow_sort IN ('COMPOUND', 'LONGBOW', 'RECURVE') ),
+    gender varchar(6) CHECK ( gender IN ('MALE', 'FEMALE', 'DIVERS') ),
+    age_group varchar(6) CHECK ( age_group IN ('JUNIOR', 'SENIOR') )
 );
 
--- Erstelle die Tabelle "Turnier"
 CREATE TABLE IF NOT EXISTS tournament (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    title VARCHAR(255),
-    address VARCHAR(255),
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT,
+    address TEXT,
     max_attendees INT,
     date DATE
 );
 
--- Erstelle die Tabelle "Turnierteilnehmer"
 CREATE TABLE IF NOT EXISTS tournament_attendees (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id_tournament_type INTEGER,
+    id_member INTEGER,
+    id_tournament INTEGER,
+    place INT,
     FOREIGN KEY (id_tournament_type) REFERENCES tournament_type(id),
     FOREIGN KEY (id_member) REFERENCES member(id),
-    FOREIGN KEY (id_tournament) REFERENCES tournament(id),
-    place INT
+    FOREIGN KEY (id_tournament) REFERENCES tournament(id)
 );

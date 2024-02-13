@@ -95,4 +95,9 @@
 
 ### 31.01.2024 (7)
 
-- Datenbank
+- Lukas: Datenbank (create)
+
+### 07.02.2024 (8)
+
+- Lukas: Datenbank (seed)
+- Lars: Entitätenklassen

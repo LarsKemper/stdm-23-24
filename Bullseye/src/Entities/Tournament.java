@@ -3,8 +3,10 @@ package Entities;
 import Entities.Abstracts.AbstractMember;
 import java.util.Date;
 import java.util.Map;
+import Utils.Interfaces.Identifiable;
 
-public class Tournament {
+public class Tournament implements Identifiable {
+    protected int id;
     private String name;
     private Date date;
     private String address;
@@ -16,6 +18,11 @@ public class Tournament {
         this.date = date;
         this.address = address;
         this.maxAttendees = maxAttendees;
+    }
+
+    @Override
+    public int getId() {
+        return this.id;
     }
 
     public String getName() {

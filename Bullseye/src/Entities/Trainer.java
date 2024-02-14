@@ -5,24 +5,24 @@ import Utils.Gender;
 import java.util.Date;
 
 public class Trainer extends AbstractMember {
-    private Date licenseDate;
+    private boolean license;
 
-    public Trainer(String name, Date birthday, Gender gender, String address, Date licenseDate, boolean status, boolean hasInsurance)
+    public Trainer(String name, Date birthday, Gender gender, String address, boolean license, boolean status, boolean hasInsurance)
     {
         super(name, birthday, gender, address, status, hasInsurance);
 
-        this.licenseDate = licenseDate;
+        this.license = license;
     }
 
     public void registerMember() {
         return; // TODO
     }
 
-    public Date getLicenseDate() {
-        return this.licenseDate;
+    public boolean getLicense() {
+        return this.license;
     }
 
-    public void setLicenseDate(Date licenseDate) {
-        this.licenseDate = licenseDate;
+    public void setLicense(boolean license) {
+        this.license = license;
     }
 }

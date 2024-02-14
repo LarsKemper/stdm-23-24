@@ -1,9 +1,11 @@
 package Entities.Abstracts;
 
+import Utils.Interfaces;
 import Utils.Gender;
 import java.util.Date;
 
-public abstract class AbstractMember {
+public abstract class AbstractMember implements Identifiable {
+    protected int id;
     private String name;
     private Date birthday;
     private Gender gender;
@@ -18,6 +20,11 @@ public abstract class AbstractMember {
         this.address = address;
         this.status = status;
         this.hasInsurance = hasInsurance;
+    }
+
+    @Override
+    public int getId() {
+        return this.id;
     }
 
     public String getName() {

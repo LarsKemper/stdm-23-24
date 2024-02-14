@@ -55,24 +55,30 @@ public class newMemeberView extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setText("Neue Mitglieder");
 
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel2.setText("Nachname");
 
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel3.setText("Vorname");
 
         jTextField1.setText("Mustermann");
 
         jTextField2.setText("Max");
 
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel4.setText("Geburtsdatum");
 
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel5.setText("Adresse");
 
         jTextField3.setText("01.01.1970");
 
         jTextField4.setText("Musterstraße 1, Musterstadt");
 
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel6.setText("Geschlecht");
 
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel7.setText("Haftplficht");
 
         genderRadio.add(male);
@@ -100,6 +106,7 @@ public class newMemeberView extends javax.swing.JFrame {
         insuranceRadio.add(no);
         no.setText("Nein");
 
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel8.setText("Art der Mitgliedschaft");
 
         activ.setText("Aktiv");

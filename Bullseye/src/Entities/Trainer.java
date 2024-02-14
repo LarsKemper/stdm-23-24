@@ -2,14 +2,15 @@ package Entities;
 
 import Entities.Abstracts.AbstractMember;
 import Utils.Gender;
+import Utils.MemberStatus;
 import java.util.Date;
 
 public class Trainer extends AbstractMember {
     private boolean license;
 
-    public Trainer(String name, Date birthday, Gender gender, String address, boolean license, boolean status, boolean hasInsurance)
+    public Trainer(String name, Date birthday, Gender gender, String address, MemberStatus status, boolean license, boolean isActive, boolean hasInsurance)
     {
-        super(name, birthday, gender, address, status, hasInsurance);
+        super(name, birthday, gender, address, status, isActive, hasInsurance);
 
         this.license = license;
     }

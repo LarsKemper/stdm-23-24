@@ -1,7 +1,8 @@
 package Entities.Abstracts;
 
-import Utils.Interfaces;
+import Utils.Interfaces.Identifiable;
 import Utils.Gender;
+import Utils.MemberStatus;
 import java.util.Date;
 
 public abstract class AbstractMember implements Identifiable {
@@ -10,10 +11,11 @@ public abstract class AbstractMember implements Identifiable {
     private Date birthday;
     private Gender gender;
     private String address;
-    private boolean status;
+    private MemberStatus status;
+    private boolean isActive;
     private boolean hasInsurance;
     
-    public AbstractMember(String name, Date birthday, Gender gender, String address, boolean status, boolean hasInsurance) {
+    public AbstractMember(String name, Date birthday, Gender gender, String address, MemberStatus status, boolean isActive, boolean hasInsurance) {
         this.name = name;
         this.birthday = birthday;
         this.gender = gender;
@@ -42,9 +44,13 @@ public abstract class AbstractMember implements Identifiable {
     public String getAddress() {
         return this.address;
     }
-
-    public boolean getStatus() {
+    
+    public MemberStatus getStatus() {
         return this.status;
+    }
+
+    public boolean getIsActive() {
+        return this.isActive;
     }
 
     public boolean getHasInsurance() {
@@ -67,8 +73,12 @@ public abstract class AbstractMember implements Identifiable {
         this.address = address;
     }
 
-    public void setStatus(boolean status) {
+    public void setStatus(MemberStatus status) {
         this.status = status;
+    }
+    
+    public void setIsActive(boolean isActive) {
+        this.isActive = isActive;
     }
 
     public void setHasInsurance(boolean hasInsurance) {

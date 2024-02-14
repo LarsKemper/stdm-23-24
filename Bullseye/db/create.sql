@@ -6,6 +6,7 @@ CREATE TABLE IF NOT EXISTS member (
     gender varchar(6) CHECK ( gender IN ('MALE', 'FEMALE', 'DIVERS') ),
     address TEXT,
     license BOOLEAN,
+    status varchar(6) CHECK ( status IN ('ACTIVE', 'PASSIVE') ) default 'PASSIVE',
     is_active BOOLEAN,
     has_insurance BOOLEAN
 );

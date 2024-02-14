@@ -14,4 +14,28 @@ public class TournamentClass {
         this.bowTyp = bowTyp;
         this.ageGroup = ageGroup;
     }
+
+    public Gender getGender() {
+        return this.gender;
+    }
+
+    public BowTyp getBowTyp() {
+        return this.bowTyp;
+    }
+
+    public AgeGroup getAgeGroup() {
+        return this.ageGroup;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
+    }
+
+    public void setBowTyp(BowTyp bowTyp) {
+        this.bowTyp = bowTyp;
+    }
+
+    public void setAgeGroup(AgeGroup ageGroup) {
+        this.ageGroup = ageGroup;
+    }
 }

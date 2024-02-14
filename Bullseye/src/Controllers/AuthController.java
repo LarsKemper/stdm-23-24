@@ -1,5 +1,7 @@
 package Controllers;
 
+import Entities.Abstracts.AbstractMember;
+
 public class AuthController {
     public void register() {
         // TODO: Implement register

@@ -17,4 +17,12 @@ public class Trainer extends AbstractMember {
     public void registerMember() {
         return; // TODO
     }
+
+    public Date getLicenseDate() {
+        return this.licenseDate;
+    }
+
+    public void setLicenseDate(Date licenseDate) {
+        this.licenseDate = licenseDate;
+    }
 }

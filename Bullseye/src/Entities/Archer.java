@@ -1,7 +1,6 @@
 package Entities;
 
-public class Archer {
-    public void setPracticeplan() {
-        return;// TODO
-    }
+import Entities.Abstracts.AbstractMember;
+
+public class Archer extends AbstractMember {
 }

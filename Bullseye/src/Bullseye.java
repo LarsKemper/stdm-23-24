@@ -1,30 +1,18 @@
 import Services.DAL;
 import Controllers.AuthController;
-import Entities.Archer;
-import Utils.Gender;
-import Utils.MemberStatus;
-import java.util.Date;
-import java.sql.SQLException;
-
+import Controllers.MemberController;
+import Controllers.TournamentController;
+import Views.StartUpView;
 
 public class Bullseye {
     public static void main(String[] args) {
         DAL dal = new DAL();
         dal.connect();
         
-        AuthController authController = new AuthController(dal);
+        //AuthController authController = new AuthController(dal);
+        //MemberController memberController = new MemberController(dal);
+        //TournamentController tournamentController = new TournamentController(dal);
 
-        Archer test = new Archer("test", "test", new Date(), Gender.MALE, "test adresss", MemberStatus.ACTIVE, false, false);
-
-        try {
-            authController.register(test);
-            System.out.println(test.getId());
-
-            authController.login(test.getId());
-        } catch (SQLException e) {
-            System.out.println(e.getMessage());
-        }
-
-        dal.disconnect();
+        new StartUpView(dal).setVisible(true);
     }
 }

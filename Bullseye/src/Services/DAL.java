@@ -25,22 +25,17 @@ public class DAL {
             e.printStackTrace();
         } catch (SQLException e) {
             System.out.println(e.getMessage());
-        } finally {
-            try {
-                if (this.connection != null) {
-                    this.connection.close();
-                }
-            } catch (SQLException ex) {
-                System.out.println(ex.getMessage());
-            }
         }
     }
 
-    public void createTables() {
-        // execute db/create.sql
-    }
-
-    public void seed() {
-        // execute db/seed.sql
+    public void disconnect() {
+        try {
+            if (this.connection != null) {
+                this.connection.close();
+                System.out.println("Connection to SQLite has been closed.");
+            }
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
     }
 }

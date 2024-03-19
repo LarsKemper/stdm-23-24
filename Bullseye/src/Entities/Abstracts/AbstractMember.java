@@ -7,7 +7,8 @@ import java.util.Date;
 
 public abstract class AbstractMember implements Identifiable {
     protected int id;
-    private String name;
+    private String firstname;
+    private String lastname;
     private Date birthday;
     private Gender gender;
     private String address;
@@ -15,8 +16,9 @@ public abstract class AbstractMember implements Identifiable {
     private boolean isActive;
     private boolean hasInsurance;
     
-    public AbstractMember(String name, Date birthday, Gender gender, String address, MemberStatus status, boolean isActive, boolean hasInsurance) {
-        this.name = name;
+    public AbstractMember(String firstname, String lastname, Date birthday, Gender gender, String address, MemberStatus status, boolean isActive, boolean hasInsurance) {
+        this.firstname = firstname;
+        this.lastname = lastname;
         this.birthday = birthday;
         this.gender = gender;
         this.address = address;
@@ -29,8 +31,12 @@ public abstract class AbstractMember implements Identifiable {
         return this.id;
     }
 
-    public String getName() {
-        return this.name;
+    public String getFirstname() {
+        return this.firstname;
+    }
+
+    public String getLastname() {
+        return this.lastname;
     }
 
     public Date getBirthday() {
@@ -57,8 +63,16 @@ public abstract class AbstractMember implements Identifiable {
         return this.hasInsurance;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setFirstname(String name) {
+        this.firstname = name;
+    }
+    
+    public void setLasttname(String name) {
+        this.lastname = name;
     }
 
     public void setBirthday(Date birthday) {

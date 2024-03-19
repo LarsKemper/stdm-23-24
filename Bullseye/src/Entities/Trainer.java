@@ -8,9 +8,9 @@ import java.util.Date;
 public class Trainer extends AbstractMember {
     private boolean license;
 
-    public Trainer(String name, Date birthday, Gender gender, String address, MemberStatus status, boolean license, boolean isActive, boolean hasInsurance)
+    public Trainer(String firstname, String lastname, Date birthday, Gender gender, String address, MemberStatus status, boolean license, boolean isActive, boolean hasInsurance)
     {
-        super(name, birthday, gender, address, status, isActive, hasInsurance);
+        super(firstname, lastname, birthday, gender, address, status, isActive, hasInsurance);
 
         this.license = license;
     }

@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DAL {
-    protected static final String URL = "jdbc:sqlite:../../db/bullseye.db";
+    protected static final String URL = "jdbc:sqlite:C:/Users/Lars/code/stdm-23-24/Bullseye/db/bullseye.db";
     private Connection connection;
 
     public DAL() {
@@ -18,8 +18,11 @@ public class DAL {
 
     public void connect() {
         try {
+            Class.forName("org.sqlite.JDBC");
             this.connection = DriverManager.getConnection(URL);
             System.out.println("Connection to SQLite has been established.");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         } finally {

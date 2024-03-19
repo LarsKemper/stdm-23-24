@@ -99,8 +99,4 @@ public class AuthController {
 
         return archer;
     }
-
-    public void logout() {
-        // TODO: Implement logout
-    }
 }
